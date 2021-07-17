@@ -1,6 +1,6 @@
 <?php 
 
-$conexion= mysql_connect("localhost" ,"root", "1234", "bd_industrias_4");
+$conexion= mysql_connect("localhost" ,"root", "", "bd_industrias_4");
 
 echo "Conectado"
 
