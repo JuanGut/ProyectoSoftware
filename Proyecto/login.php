@@ -23,7 +23,7 @@
     <form action="validar.php" method="post" id="inicio">
     <h1>Ingresar</h1>
     <p>Usuario<input type="text" placeholder="Ingrese su usuario" name="usuario"></p>
-    <p>Contraseña<input type="text" placeholder="Ingrese su contraseña" name="contraseña"></p>
+    <p>Contraseña<input type="password" placeholder="Ingrese su contraseña" name="contraseña"></p>
     <input type="submit" value="Ingresar">
     <br></br>
     <br></br>
