@@ -30,11 +30,11 @@
     <a href="https://www.uniquindio.edu.co/" id="recuperacion"> ¿Olvido su contraseña?</a>
     <br></br>
     <p id="p1">¿No estas registrado? <a href="registro.php" id="registro"> Registrate</a></p>
-    <img src="Recursos/industria4.gif" id="img2" height=450px > 
+    
     
     
     </form>
-    
+    <img src="Recursos/industria4.gif" id="img2" height=500px width=60% position=absolute top=20%> 
 
 </body>
 </html>
