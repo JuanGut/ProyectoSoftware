@@ -14,7 +14,7 @@
     <nav id="Nav">
         <div id="Contenedor">
             <img src="Recursos/iconoU.png" id="u" class="img1">
-            <h1  class="titulo1"> Plataforma Industria 4.0 </h1>
+            <h1  class="titulo1"> PLATAFORMA INDUSTRIA 4.0 </h1>
         </div>
     </nav>
     <br>
