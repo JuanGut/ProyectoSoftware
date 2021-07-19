@@ -6,9 +6,8 @@ session_start();
 
 include('db.php');
 
-$consulta = "SELECT*FROM usuario where correo ='$usuario' and contraseña= '$contraseña';";
+$consulta = "SELECT*FROM usuario where correo ='$usuario';";
 $resultado = mysqli_query($conexion, $consulta);
-
 $filas = mysqli_num_rows($resultado);
 if($filas)
 {
