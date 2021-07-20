@@ -1,12 +1,16 @@
-<?php 
-
-//$conexion= mysqli_connect("sql307.epizy.com" ,"epiz_29169643", "CVT90zFcgH", "epiz_29169643_bd_industrias_4");
-$conexion= mysqli_connect("localhost" ,"root", "1234", "bd_industrias_4");
-echo "Conectado";
-if (!$conexion) {
-    die('No pudo conectarse: ' . mysql_error());
+<?php
+// PHP Data Objects(PDO) Sample Code:
+try {
+    $conexion = new PDO("sqlsrv:server = tcp:miservidorsql5050.database.windows.net,1433; Database = miBaseDeDatos", "usuarioazure", "Andres123");
+    $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
-echo 'Conectado satisfactoriamente';
+catch (PDOException $e) {
+    print("Error connecting to SQL Server.");
+    die(print_r($e));
+}
 
-
+// SQL Server Extension Sample Code:
+$connectionInfo = array("UID" => "usuarioazure", "pwd" => "Andres123", "Database" => "miBaseDeDatos", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$serverName = "tcp:miservidorsql5050.database.windows.net,1433";
+$conexion = sqlsrv_connect($serverName, $connectionInfo);
 ?>
