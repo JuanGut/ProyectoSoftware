@@ -17,6 +17,7 @@ if($cedula === '' || $nombre === '' || $apellido === '' || $correo === '' || $co
             <?php
 }
 else{
+    $auxContra = md5($contraseña);
     $consulta="INSERT INTO usuario (cedula,nombre,apellidos,correo,contraseña) VALUES ('$cedula', '$nombre','$apellido','$correo', '$contraseña');";
     $resultado = mysqli_query($conexion, $consulta);
     echo $resultado;

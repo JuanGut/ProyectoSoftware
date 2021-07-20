@@ -14,7 +14,8 @@ if($usuario === '' || $contraseña === '')
 }
 else{
 
-    $consulta = "SELECT*FROM usuario where correo ='$usuario' and contraseña = '$contraseña';";
+    $auxcontr = md5($contraseña);
+    $consulta = "SELECT*FROM usuario where correo ='$usuario' and contraseña = '$auxcontr';";
         $resultado = mysqli_query($conexion, $consulta);
         $filas = mysqli_num_rows($resultado);
         if($filas)
