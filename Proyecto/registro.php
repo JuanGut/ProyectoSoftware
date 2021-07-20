@@ -18,7 +18,7 @@
         </div>
       </nav>
 
-      <form action="index.html" method="post">
+      <form action="validacionRegistro.php" method="post">
       
         <h1 class="titulo2">Registro</h1>
         

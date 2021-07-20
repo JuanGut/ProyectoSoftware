@@ -4,12 +4,12 @@ $cedula=$_POST['user_cedula'];
 $nombre=$_POST['user_name'];
 $apellido=$_POST['user_name'];
 $correo=$_POST['user_email'];
-$contrasenia=$_POST['user_password'];
+$contraseña=$_POST['user_password'];
 session_start();
 
 include('db.php');
 
-if($cedula === '' || $nombre === '' || $apellido === '' || $correo === '' || $contrasenia === '')
+if($cedula === '' || $nombre === '' || $apellido === '' || $correo === '' || $contraseña === '')
 {
     include("registro.php");
             ?>
@@ -17,7 +17,7 @@ if($cedula === '' || $nombre === '' || $apellido === '' || $correo === '' || $co
             <?php
 }
 else{
-    $consulta="INSERT INTO usuario (cedula,nombre,apellidos,correo,contraseña) VALUES ('$cedula', '$nombre','$apellido','$correo', '$contrasenia');";
+    $consulta="INSERT INTO usuario (cedula,nombre,apellidos,correo,contraseña) VALUES ('$cedula', '$nombre','$apellido','$correo', '$contraseña');";
     $resultado = mysqli_query($conexion, $consulta);
     echo $resultado;
     if($resultado)
