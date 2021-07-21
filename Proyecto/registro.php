@@ -18,7 +18,7 @@
         </div>
       </nav>
 
-      <form action="index.html" method="post">
+      <form action="ValidacionRegistro.php" method="post">
       
         <h1 class="titulo2">Registro</h1>
         
@@ -28,7 +28,7 @@
           <input type="text" id="name" name="user_name" placeholder="Nombre y apellidos">
 
           <label for="name">Cedula:</label>
-          <input type="text" id="name" name="user_name" placeholder="Numero de documento">
+          <input type="text" id="name" name="user_cedula" placeholder="Numero de documento">
           
           <label for="mail">Email:</label>
           <input type="email" id="mail" name="user_email" placeholder="Correo electronico">

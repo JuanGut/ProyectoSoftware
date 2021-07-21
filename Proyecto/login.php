@@ -29,7 +29,7 @@
     <br></br>
     <a href="https://www.uniquindio.edu.co/" id="recuperacion"> ¿Olvido su contraseña?</a>
     <br></br>
-    <p id="p1">¿No estas registrado? <a href="http://localhost/Proyecto/registro.php" id="registro"> Registrate</a></p>
+    <p id="p1">¿No estas registrado? <a href="registro.php" id="registro"> Registrate</a></p>
     
     
     
