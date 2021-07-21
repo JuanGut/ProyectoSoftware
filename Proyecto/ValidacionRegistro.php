@@ -14,7 +14,7 @@ $resultado = mysqli_query($conexion, $consulta);
 echo $resultado;
 if($resultado)
 {
-    header("location:home.php");
+    header("location:login.php");
     
 }
 else
