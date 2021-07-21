@@ -11,6 +11,7 @@
 </head>
 <body>
 
+<h1>Titulo 1</h1>
     <nav id="Nav">
         <div id="Contenedor">
             <img src="Recursos/iconoU.png" id="u" class="img1">
