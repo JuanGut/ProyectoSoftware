@@ -1,45 +1,33 @@
-<?php
-//Conectamos con la base de datos
-	require('db.php'); 
-	$enlace = mysql_connect($host,$usuario,$password); 
-	mysql_select_db($db,$enlace); 
-	
-//Seleccionamos la informacion de la última encuesta insertada
-	$consulta = "SELECT * FROM encuestas ORDER BY fecha DESC LIMIT 0,1"; 
-	$consulta = mysql_query($consulta,$enlace); 
-	while($row = mysql_fetch_array($consulta)){ 
-		$titulo=$row["titulo"]; 
-		$fecha=$row["fecha"];
-		$id=$row['id'];
-	}
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/cabecera2.css">
+    <link rel="stylesheet" href="Estilos/encuesta.css">
+    <title>Encuesta</title>
+</head>
 <body>
-<form name="form1" method="post" action="votar.php">
-  <table width="350" border="1">
-    <tr> 
-      <td colspan="2"><strong>Titulo</strong>: <?php echo $titulo; ?>
-        <input type="hidden" name="id" value="<?php echo $id;?>"></td>
-    </tr>
-    <?php
-	$sql = "SELECT texto, id FROM respuestas WHERE idenc="$id"";
-	$sql = mysql_query($sql,$enlace); 
-	while($row = mysql_fetch_array($sql)){ 
-		$texto=$row["texto"]; 
-		$idres=$row["id"];
-?>
-    <tr> 
-      <td width="51"><input type="radio" name="opcion" value="<?php echo $idres; ?>"></td>
-      <td width="283"><?php echo $texto; ?></td>
-    </tr>
-    <?php } ?>
-    <tr>
-      <td><input type="submit" name="Submit" value="Enviar"></td>
-		
-      <td>Esta encuesta est&aacute; desde el <?php echo date('d-m-y',$fecha); ?></td>
-    </tr>
-    <tr>
-      <td colspan="2"><a href="votar.php">Ver resultados</a></td>
-    </tr>
-  </table>
-</form>
+
+    <nav id="Nav">
+            <div id="Contenedor">
+                <img src="Recursos/iconoU.png" id="u" class="img1">
+                <h1  class="titulo3"> Encuesta evaluativa("Nombre de competencia") </h1>
+            </div>
+    </nav>
+
+    <div class="preg1">
+        <div class="pregunta">1. ¿Pregunta 1?<br />
+        <input type="radio" name="preg1" value="1" /> Sí<br />
+        <input type="radio" name="preg1" value="2" /> No<br />
+        <input type="radio" name="preg1" value="3" /> Ns/Nc<br />
+    </div>
+    
+    <div class="botones">
+        <input type="submit" value="Cancelar" class="btn1">
+        <input type="submit" value="Enviar" class="btn2">
+    </div>
+    
 </body>
+</html>

@@ -1,0 +1,60 @@
+.competencias ul, .competencias li {
+	margin: 0% 0% 0% 0%;
+	padding: 20px 0px;
+}
+.competencias li {
+	float: left;
+	position: relative;
+    left: 27%;
+    list-style: none;
+}
+.comp2,.comp3 {
+	background: #399D21;
+	color: #FFFFFF;
+	display: block;
+	font: bold 16px/30px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	
+}
+.comp1{
+	background: #61F666;
+	color: #FFFFFF;
+	display: block;
+	font: bold 16px/30px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.competencias li:hover a {
+	background: #61F666;
+}
+.icono{
+
+    position: relative;
+    width: 71%;
+    height: 350px;
+    margin: 2% 14% 14% 14% ;
+    
+}
+
+p{
+	position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+	margin: 45% 14% 14% 14% ;
+}
+
+input[type='submit']{
+	background-color: #399D21;
+	color: #fff;
+	width: 15%;
+    height: 43px;
+	margin: -20% 0% 0% 42%;
+	margin-top: 22px;
+	border: none;
+    font-size: 20px;
+	
+}

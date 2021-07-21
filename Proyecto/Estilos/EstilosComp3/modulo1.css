@@ -1,0 +1,119 @@
+.competencias ul, .competencias li {
+	margin: 0% 0% 0% 0%;
+	padding: 20px 0px;
+}
+.submenu ul, .submenu li {
+	margin: 0% 0% 0% 0%;
+	padding: 20px 0px;
+}
+.competencias li {
+	float: left;
+	position: relative;
+    left: 27%;
+    list-style: none;
+}
+.comp1,.comp2 {
+	background: #399D21;
+	color: #FFFFFF;
+	display: block;
+	font: bold 16px/30px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	
+}
+.comp3{
+	background: #61F666;
+	color: #FFFFFF;
+	display: block;
+	font: bold 16px/30px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.competencias li:hover a {
+	background: #61F666;
+}
+.submenu li:hover a {
+	background: #61F666;
+}
+.submenu li{
+
+	float: left;
+	position: relative;
+	margin-top: 5%;
+    left: -20%;
+    list-style: none;
+}
+.mod2, .mod3, .mod4{
+
+	background: #399D21;
+	color: #FFFFFF;
+	display: block;
+	font: bold 16px/30px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.mod1{
+	background: #61F666;
+	color: #FFFFFF;
+	display: block;
+	font: bold 16px/30px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.icono{
+
+    position: relative;
+    width: 71%;
+    height: 350px;
+    margin: 2% 14% 14% 14% ;
+    
+}
+#ma{
+    margin: -12% 14% 14% 14% ;
+    color: #399D21;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic);
+.tabla{
+    margin: -12% 14% 14% 14% ;
+    
+}
+
+.tabla tbody tr td {
+    text-align: center;
+    padding: 10px 20px;
+}
+.tabla tbody tr td.align-left {
+    text-align: left;
+}
+.tabla thead {
+    cursor: pointer;
+    background:#399D21;
+    color: #FFFFFF;
+}
+.tabla thead tr th { 
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.tabla thead tr th span { 
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: 100% 55%;
+}
+p{
+	position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+	margin: 20% 14% 14% 14% ;
+}
+h2{
+    margin: -12% 14% 14% 14% ;
+    color: #399D21;
+    font-size: 20px;
+}

@@ -1,0 +1,55 @@
+#menU ul li {
+    background-color:#2e518b;
+}
+
+#menU ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#menU ul a {
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  font-weight:400;
+  font-size:15px;
+  padding:10px;
+  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+#menU ul li {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+#menU ul li:hover {
+  background:#5b78a7;
+}
+
+#menU ul s {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:0;
+}
+
+#menU ul ul li {
+  float:none;
+  width:150px
+}
+
+#menU ul ul a {
+  line-height:120%;
+  padding:10px 15px;
+}
+
+#menU ul li:hover > ul {
+  display:block;
+}
+

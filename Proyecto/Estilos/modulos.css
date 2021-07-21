@@ -1,0 +1,32 @@
+.competencias ul, .competencias li {
+	margin: 0% 0% 0% 0%;
+	padding: 20px 0px;
+}
+.competencias li {
+	float: left;
+	position: relative;
+    left: 27%;
+    list-style: none;
+}
+.competencias a {
+	background: #399D21;
+	color: #FFFFFF;
+	display: block;
+	font: bold 16px/30px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	
+}
+.competencias li:hover a {
+	background: #61F666;
+}
+
+p{
+	position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+	top: 30%;
+	right: 30%;
+}
+

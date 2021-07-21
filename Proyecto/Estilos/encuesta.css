@@ -1,0 +1,26 @@
+.preg1{
+
+    position: absolute;
+    margin: 10% 0% 0% 20% ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+input[type='submit']{
+	background-color: rgb(35, 155, 51);
+	color: #fff;
+	margin: 0% 0% 0% 40%;
+	margin-top: 22px;
+	border: none;
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+    
+	
+}
+.botones
+{
+    justify-content:space-around;
+    
+    
+}
